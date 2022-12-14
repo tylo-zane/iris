@@ -15,7 +15,7 @@ class App extends Component {
     if (this.state.loading === true) {
       return (
           <div className="App-body">
-            <img src={logo} className="App-logo" alt="logo" />
+            <Eye></Eye>
             <h1>
               Welcome
             </h1>
