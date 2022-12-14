@@ -15,9 +15,9 @@ class App extends Component {
       return (
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <p>
+            <h1>
               Welcome
-            </p>
+            </h1>
           </header>
       )
     } else {
