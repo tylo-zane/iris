@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { Route, Switch, NavLink} from 'react-router-dom';
 import loading from './img/loading.png';
 import './App.css';
 import Eye from './Eye.js';
+import ServerList from './ServerList.js';
 
 class App extends Component {
   constructor (props) {
@@ -11,11 +13,15 @@ class App extends Component {
     };
   }
 
+  componentDidMount () {
+    this.setState({ loading: false });
+  }
+
   render() {
     if (this.state.loading === true) {
       return (
-          <div className="App-body">
-            <Eye></Eye>
+          <div className="App-body App-body-loading">
+            <Eye alt="animated eye"></Eye>
             <h1>
               Welcome
             </h1>
@@ -25,9 +31,17 @@ class App extends Component {
     } else {
       return (
           <div className="App-body">
-            <p>
-              Welcome
-            </p>
+            <div class="App-header">
+              <h1>
+                IRIS
+              </h1>
+              <p>
+                Create account
+              </p>
+            </div>
+            <div class="App-main">
+              <ServerList></ServerList>
+            </div>
           </div>
       )
     }

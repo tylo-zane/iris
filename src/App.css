@@ -19,18 +19,34 @@
 .App-body {
   background-color: #000000;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-body-loading {
+  align-items: center;
+  justify-content: center;
 }
 
 .App-body h1 {
   font-size: 1.25em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+}
+
+.App-header {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.App-header h1 {
+  font-size: 2em;
+  margin: 0;
 }
 
 .App-link {
