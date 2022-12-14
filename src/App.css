@@ -28,6 +28,7 @@
 }
 
 .App-body h1 {
+  font-size: 1.25em;
   margin-top: 0;
   margin-bottom: 0.5em;
 }
@@ -58,7 +59,7 @@
   position: absolute;
   width: 70px;
   height: 70px;
-  border: 2px solid #FFF;
+  border: 1px solid #FFF;
   background-color: #000;
   border-radius:50%;
   left:40px;  
@@ -69,7 +70,7 @@
   content:"";
   position: absolute;
   background-color: #000;
-  outline: 2px solid #FFF;
+  outline: 1px solid #FFF;
   border-radius:50%;
   width:40px;
   height: 40px;
@@ -94,7 +95,7 @@
   width: 150px;
   height: 150px;
   background-color: transparent;
-  border: 2px solid #FFF;
+  border: 1px solid #FFF;
   border-radius:100% 0;
   box-shadow: inset 5px 5px 5px rgba(0,0,0,0.3);
   transform: rotate(45deg);
@@ -105,8 +106,8 @@
 
 .Eye-eyelid {
   position: absolute;
-  border-top: 2px solid #FFF;
-  border-left: 2px solid #FFF;
+  border-top: 1px solid #FFF;
+  border-left: 1px solid #FFF;
   border-radius:100% 0;
   width: 150px;
   height: 150px;
