@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Eye from './Eye.js';
 
 class App extends Component {
   constructor (props) {
@@ -13,21 +14,21 @@ class App extends Component {
   render() {
     if (this.state.loading === true) {
       return (
-          <header className="App-header">
+          <div className="App-body">
             <img src={logo} className="App-logo" alt="logo" />
             <h1>
               Welcome
             </h1>
-          </header>
+          </div>
       )
     } else {
       return (
-          <header className="App-header">
+          <div className="App-body">
             <img src={logo} className="App-logo" alt="logo" />
             <p>
               Welcome
             </p>
-          </header>
+          </div>
       )
     }
   }
