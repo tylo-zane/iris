@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import loading from './img/loading.png';
 import './App.css';
 import Eye from './Eye.js';
 
@@ -19,12 +19,12 @@ class App extends Component {
             <h1>
               Welcome
             </h1>
+            <img src={loading} className="App-loading" alt="spinning loading symbol" />
           </div>
       )
     } else {
       return (
           <div className="App-body">
-            <img src={logo} className="App-logo" alt="logo" />
             <p>
               Welcome
             </p>
